@@ -1,0 +1,5 @@
+package com.ExamSystem.BO;
+
+public class User {
+
+}

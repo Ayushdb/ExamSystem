@@ -1,0 +1,19 @@
+package com.ExamSystem.Controller.REST;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ESRestController {
+	
+	@Autowired
+	public DriverManagerDataSource ds; 
+	
+	@RequestMapping("/welcome")
+	public String welcome(String name){
+		System.out.println("Entered the REST controller");
+		return "Welcome Page Initiated through REST";
+	}
+}

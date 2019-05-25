@@ -1,0 +1,8 @@
+package com.ExamSystem.BO;
+
+public class User {
+	String userName;
+	String name;
+	long userId;
+	String password;
+}

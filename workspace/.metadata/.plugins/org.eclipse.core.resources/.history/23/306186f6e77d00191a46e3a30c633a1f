@@ -1,0 +1,23 @@
+<beans xmlns="<a class="vglnk" href="http://www.springframework.org/schema/beans" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>springframework</span><span>.</span><span>org</span><span>/</span><span>schema</span><span>/</span><span>beans</span></a>"
+    xmlns:context="<a class="vglnk" href="http://www.springframework.org/schema/context" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>springframework</span><span>.</span><span>org</span><span>/</span><span>schema</span><span>/</span><span>context</span></a>"
+    xmlns:mvc="<a class="vglnk" href="http://www.springframework.org/schema/mvc" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>springframework</span><span>.</span><span>org</span><span>/</span><span>schema</span><span>/</span><span>mvc</span></a>"
+    xmlns:xsi="<a class="vglnk" href="http://www.w3.org/2001/XMLSchema-instance" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>w3</span><span>.</span><span>org</span><span>/</span><span>2001</span><span>/</span><span>XMLSchema</span><span>-</span><span>instance</span></a>"
+    xsi:schemaLocation="<a class="vglnk" href="http://www.springframework.org/schema/beans" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>springframework</span><span>.</span><span>org</span><span>/</span><span>schema</span><span>/</span><span>beans</span></a> <a class="vglnk" href="http://www.springframework.org/schema/beans/spring-beans-4.0.xsd" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>springframework</span><span>.</span><span>org</span><span>/</span><span>schema</span><span>/</span><span>beans</span><span>/</span><span>spring</span><span>-</span><span>beans</span><span>-</span><span>4</span><span>.</span><span>0</span><span>.</span><span>xsd</span></a>
+    <a class="vglnk" href="http://www.springframework.org/schema/mvc" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>springframework</span><span>.</span><span>org</span><span>/</span><span>schema</span><span>/</span><span>mvc</span></a> <a class="vglnk" href="http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>springframework</span><span>.</span><span>org</span><span>/</span><span>schema</span><span>/</span><span>mvc</span><span>/</span><span>spring</span><span>-</span><span>mvc</span><span>-</span><span>4</span><span>.</span><span>0</span><span>.</span><span>xsd</span></a>
+    <a class="vglnk" href="http://www.springframework.org/schema/context" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>springframework</span><span>.</span><span>org</span><span>/</span><span>schema</span><span>/</span><span>context</span></a> <a class="vglnk" href="http://www.springframework.org/schema/context/spring-context-4.0.xsd" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>springframework</span><span>.</span><span>org</span><span>/</span><span>schema</span><span>/</span><span>context</span><span>/</span><span>spring</span><span>-</span><span>context</span><span>-</span><span>4</span><span>.</span><span>0</span><span>.</span><span>xsd</span></a>">
+ 
+    <context:component-scan base-package="com.websystique.springmvc" />
+ 
+    <mvc:annotation-driven />
+     
+    <bean
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix">
+            <value>/WEB-INF/views/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>
+ 
+</beans>
